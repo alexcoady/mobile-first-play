@@ -2278,6 +2278,18 @@ a {
 }
 
 /* line 122, ../scss/screen.scss */
+.nav__toggle {
+  color: #7d7a66;
+  font-size: 2.5em;
+}
+/* line 126, ../scss/screen.scss */
+.nav__toggle .text {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+/* line 131, ../scss/screen.scss */
 .nav__item {
   display: block;
   height: 28px;
@@ -2286,7 +2298,7 @@ a {
   text-transform: uppercase;
   color: #7d7a66;
 }
-/* line 131, ../scss/screen.scss */
+/* line 140, ../scss/screen.scss */
 .nav__item.is-active {
   color: #292820;
 }
@@ -2294,13 +2306,13 @@ a {
 /* ------------------------------------------------------- */
 /* ----- ARTICLE ----------------------------------------- */
 /* ------------------------------------------------------- */
-/* line 140, ../scss/screen.scss */
+/* line 149, ../scss/screen.scss */
 .article {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 145, ../scss/screen.scss */
+/* line 154, ../scss/screen.scss */
 .article__details {
   display: inline;
   float: left;
@@ -2308,7 +2320,7 @@ a {
   margin: 0 1.04167%;
 }
 
-/* line 149, ../scss/screen.scss */
+/* line 158, ../scss/screen.scss */
 .article__figure {
   display: inline;
   float: left;
@@ -2316,7 +2328,7 @@ a {
   margin: 0 1.04167%;
 }
 
-/* line 153, ../scss/screen.scss */
+/* line 162, ../scss/screen.scss */
 .article__link {
   display: block;
   margin-bottom: 20px;
@@ -2324,7 +2336,7 @@ a {
   font-weight: bold;
   color: #7d7a66;
 }
-/* line 161, ../scss/screen.scss */
+/* line 170, ../scss/screen.scss */
 .article__link i {
   margin-right: 5px;
   font-size: 1.2em;

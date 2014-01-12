@@ -119,6 +119,15 @@ a {
 	clear: both;
 }
 
+.nav__toggle {
+	color: $color-grey-light;
+	font-size: 2.5em;
+
+	.text {
+		@include squish-text;
+	}
+}
+
 .nav__item {
 	display: block;
 	height: 28px;
