@@ -1,0 +1,143 @@
+// Compass imports
+@import 'compass';
+@import 'compass/reset';
+
+// Local imports
+@import 'grid';
+
+
+$color-blue: #538bc0;
+$color-gold: #d3ceae;
+$color-gold-light: #e0ddc6;
+
+$color-grey-dark: #292820;
+$color-grey-darker: #7d7a67;
+$color-grey-light: #7d7a66;
+
+$color-white: #ffffff;
+
+$spacing: 10px;
+$spacing-more: $spacing * 2;
+$spacing-less: $spacing / 2;
+
+body {
+	font-size: 16px;
+	font-family:  Arial;
+	color: $color-blue;
+}
+
+/* ------------------------------------------------------- */
+/* ----- GRID -------------------------------------------- */
+/* ------------------------------------------------------- */
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* ------------------------------------------------------- */
+/* ----- TYPE -------------------------------------------- */
+/* ------------------------------------------------------- */
+
+.heading {
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+
+.heading--main {
+	font-size: 1.875em;
+}
+
+.heading--sub {
+	border: 1px solid $color-blue;
+	border-width: 1px 0;
+}
+
+.heading__light {
+	display: block;
+	border-bottom: 1px solid $color-blue;
+	margin-bottom: 10px;
+	padding: 5px 0;
+
+	font-weight: normal;
+}
+
+/* ------------------------------------------------------- */
+/* ----- HEADER ------------------------------------------ */
+/* ------------------------------------------------------- */
+
+.header--main {
+	@include column(16);
+	@include clearfix;
+	margin-bottom: $spacing-more;
+
+	background: $color-blue;
+	color: $color-white;
+}
+
+.header__link {
+	float: left;
+}
+
+.logo {
+ 	width: 120px;
+ 	height: auto;
+}
+
+.header__text {
+	float: right;
+	width: 150px;
+
+	text-align: right;
+	text-transform: uppercase;
+}
+
+/* ------------------------------------------------------- */
+/* ----- NAVIGATION -------------------------------------- */
+/* ------------------------------------------------------- */
+
+.nav--primary {
+	background: $color-gold;
+	width: 100%;
+	clear: both;
+}
+
+.nav__item {
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 1px solid $color-grey-darker;
+
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $color-grey-light;
+
+	&.is-active {
+		color: $color-grey-dark;
+	}
+}
+
+/* ------------------------------------------------------- */
+/* ----- ARTICLE ----------------------------------------- */
+/* ------------------------------------------------------- */
+
+.article {
+	width: 100%;
+	overflow: hidden;
+}
+
+.article__details {
+	@include column(16);
+}
+
+.article__figure {
+	@include column(16);
+}
+
+.article__image {
+	width: 100%;
+	height: auto;
+}
+
+

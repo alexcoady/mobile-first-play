@@ -1,0 +1,207 @@
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 27, ../scss/_grid.scss */
+body {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 23, ../scss/screen.scss */
+body {
+  font-size: 16px;
+  font-family: Arial;
+  color: #538bc0;
+}
+
+/* ------------------------------------------------------- */
+/* ----- GRID -------------------------------------------- */
+/* ------------------------------------------------------- */
+/* line 33, ../scss/screen.scss */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------- */
+/* ----- TYPE -------------------------------------------- */
+/* ------------------------------------------------------- */
+/* line 42, ../scss/screen.scss */
+.heading {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 48, ../scss/screen.scss */
+.heading--main {
+  font-size: 1.875em;
+}
+
+/* line 52, ../scss/screen.scss */
+.heading--sub {
+  border: 1px solid #538bc0;
+  border-width: 1px 0;
+}
+
+/* line 57, ../scss/screen.scss */
+.heading__light {
+  display: block;
+  border-bottom: 1px solid #538bc0;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  font-weight: normal;
+}
+
+/* ------------------------------------------------------- */
+/* ----- HEADER ------------------------------------------ */
+/* ------------------------------------------------------- */
+/* line 70, ../scss/screen.scss */
+.header--main {
+  display: inline;
+  float: left;
+  width: 97.91667%;
+  margin: 0 1.04167%;
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 20px;
+  background: #538bc0;
+  color: white;
+}
+
+/* line 79, ../scss/screen.scss */
+.header__link {
+  float: left;
+}
+
+/* line 83, ../scss/screen.scss */
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+/* line 88, ../scss/screen.scss */
+.header__text {
+  float: right;
+  width: 150px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------- */
+/* ----- NAVIGATION -------------------------------------- */
+/* ------------------------------------------------------- */
+/* line 100, ../scss/screen.scss */
+.nav--primary {
+  background: #d3ceae;
+  width: 100%;
+  clear: both;
+}
+
+/* line 106, ../scss/screen.scss */
+.nav__item {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  border-bottom: 1px solid #7d7a67;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #7d7a66;
+}
+/* line 116, ../scss/screen.scss */
+.nav__item.is-active {
+  color: #292820;
+}
+
+/* ------------------------------------------------------- */
+/* ----- ARTICLE ----------------------------------------- */
+/* ------------------------------------------------------- */
+/* line 125, ../scss/screen.scss */
+.article {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 130, ../scss/screen.scss */
+.article__details {
+  display: inline;
+  float: left;
+  width: 97.91667%;
+  margin: 0 1.04167%;
+}
+
+/* line 134, ../scss/screen.scss */
+.article__figure {
+  display: inline;
+  float: left;
+  width: 97.91667%;
+  margin: 0 1.04167%;
+}
+
+/* line 138, ../scss/screen.scss */
+.article__image {
+  width: 100%;
+  height: auto;
+}
