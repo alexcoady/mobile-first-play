@@ -4,6 +4,7 @@
 
 // Local imports
 @import 'grid';
+@import 'font-awesome';
 
 
 $color-blue: #538bc0;
@@ -35,6 +36,11 @@ body {
 	margin: 0 auto;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 /* ------------------------------------------------------- */
 /* ----- TYPE -------------------------------------------- */
 /* ------------------------------------------------------- */
@@ -63,13 +69,25 @@ body {
 	font-weight: normal;
 }
 
+p {
+	margin-bottom: $spacing-more;
+	line-height: 1.3em;
+}
+
+.standfirst {
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
 /* ------------------------------------------------------- */
 /* ----- HEADER ------------------------------------------ */
 /* ------------------------------------------------------- */
 
 .header--main {
-	@include column(16);
-	@include clearfix;
+	width: 100%;
 	margin-bottom: $spacing-more;
 
 	background: $color-blue;
@@ -78,16 +96,14 @@ body {
 
 .header__link {
 	float: left;
-}
-
-.logo {
- 	width: 120px;
- 	height: auto;
+	display: block;
+	width: 120px;
 }
 
 .header__text {
 	float: right;
 	width: 150px;
+	margin-bottom: 0;
 
 	text-align: right;
 	text-transform: uppercase;
@@ -110,7 +126,6 @@ body {
 	border-bottom: 1px solid $color-grey-darker;
 
 	text-transform: uppercase;
-	text-decoration: none;
 	color: $color-grey-light;
 
 	&.is-active {
@@ -135,9 +150,17 @@ body {
 	@include column(16);
 }
 
-.article__image {
-	width: 100%;
-	height: auto;
-}
+.article__link {
+	display: block;
+	margin-bottom: $spacing-more;
 
+	font-size: 0.75em;
+	font-weight: bold;
+	color: $color-grey-light;
+
+	i {
+		margin-right: $spacing-less;
+		font-size: 1.2em;
+	}
+}
 
